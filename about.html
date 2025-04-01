@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Rabil Fernanda</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <div class="text-xl font-semibold text-gray-800">Rabil Fernanda</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-blue-600 transition">Home</a>
+                    <a href="about.html" class="text-blue-600 hover:text-blue-800 transition">About</a>
+                    <a href="projects.html" class="text-gray-600 hover:text-blue-600 transition">Projects</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-blue-600 transition">Contact</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-gray-600 hover:text-gray-800 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <a href="index.html" class="block py-2 text-gray-600 hover:text-blue-600">Home</a>
+                <a href="about.html" class="block py-2 text-blue-600 hover:text-blue-800">About</a>
+                <a href="projects.html" class="block py-2 text-gray-600 hover:text-blue-600">Projects</a>
+                <a href="contact.html" class="block py-2 text-gray-600 hover:text-blue-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Header -->
+    <section class="pt-32 pb-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                         alt="Rabil Fernanda Profile" 
+                         class="rounded-lg shadow-xl w-full max-w-md mx-auto">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">About Me</h1>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Hello! I'm Rabil Fernanda, a passionate Quality Assurance based in Jakarta. With over 3 years of 
+                        experience in QA Engineer, I specialize in Testing functional websites and applications 
+                        that deliver exceptional user experiences.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="contact.html" class="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white font-semibold py-2 px-6 rounded-full transition duration-300">
+                            Get in Touch
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Experience</h2>
+            <div class="max-w-4xl mx-auto">
+                <!-- Experience Item 1 -->
+                <div class="mb-12 relative pl-8 border-l-2 border-blue-600">
+                    <div class="absolute w-4 h-4 bg-blue-600 rounded-full -left-[9px] top-0"></div>
+                    <div class="mb-2">
+                        <h3 class="text-xl font-semibold text-gray-800">Senior Quality Assurance</h3>
+                        <p class="text-gray-600">PT Sprint Asia Technology. | 2023 - Present</p>
+                    </div>
+                    <p class="text-gray-600">
+                        Testing of web applications using Postman, RobotFramework, and Dbeaver. 
+                        and implemented agile methodologies.
+                    </p>
+                </div>
+
+                <!-- Experience Item 2 -->
+                <div class="mb-12 relative pl-8 border-l-2 border-blue-600">
+                    <div class="absolute w-4 h-4 bg-blue-600 rounded-full -left-[9px] top-0"></div>
+                    <div class="mb-2">
+                        <h3 class="text-xl font-semibold text-gray-800">Quality Assurance</h3>
+                        <p class="text-gray-600">PT Famindo Kunci Sukses | 2018 - 2020</p>
+                    </div>
+                    <p class="text-gray-600">
+                        Testing of web applications using Postman, RobotFramework, and Dbeaver. 
+                        and implemented agile methodologies.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Technologies -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Skills & Technologies</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <!-- Frontend -->
+                <div class="p-6 bg-gray-50 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Frontend</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fab fa-html5 mr-2 text-orange-500"></i>HTML5</li>
+                        <li><i class="fab fa-css3-alt mr-2 text-blue-500"></i>CSS3</li>
+                        <li><i class="fab fa-js mr-2 text-yellow-500"></i>JavaScript</li>
+                        <li><i class="fab fa-react mr-2 text-blue-400"></i>React</li>
+                    </ul>
+                </div>
+
+                <!-- Backend -->
+                <div class="p-6 bg-gray-50 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Backend</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fab fa-node-js mr-2 text-green-500"></i>Node.js</li>
+                        <li><i class="fas fa-database mr-2 text-blue-500"></i>MongoDB</li>
+                        <li><i class="fas fa-server mr-2 text-purple-500"></i>Express.js</li>
+                        <li><i class="fas fa-fire mr-2 text-orange-500"></i>Firebase</li>
+                    </ul>
+                </div>
+
+                <!-- Tools -->
+                <div class="p-6 bg-gray-50 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Tools</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fab fa-git-alt mr-2 text-red-500"></i>Git</li>
+                        <li><i class="fab fa-docker mr-2 text-blue-500"></i>Docker</li>
+                        <li><i class="fab fa-aws mr-2 text-orange-500"></i>AWS</li>
+                        <li><i class="fas fa-terminal mr-2 text-gray-700"></i>CLI</li>
+                    </ul>
+                </div>
+
+                <!-- Other -->
+                <div class="p-6 bg-gray-50 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Other</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fas fa-mobile-alt mr-2 text-gray-700"></i>Responsive Design</li>
+                        <li><i class="fas fa-universal-access mr-2 text-blue-600"></i>Accessibility</li>
+                        <li><i class="fas fa-search mr-2 text-green-600"></i>SEO</li>
+                        <li><i class="fas fa-shield-alt mr-2 text-red-600"></i>Security</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-2xl font-semibold mb-4 md:mb-0">Rabil Fernanda</div>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-github text-2xl"></i></a>
+                    <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-linkedin text-2xl"></i></a>
+                    <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-twitter text-2xl"></i></a>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-gray-400">
+                <p>&copy; 2024 Rabil Fernanda. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
